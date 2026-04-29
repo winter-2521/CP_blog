@@ -1,5 +1,8 @@
 name: Upload Preview Deployment
 on:
+  push:
+      branches:
+        - v4
   workflow_run:
     workflows: ["Build Preview Deployment"]
     types:
